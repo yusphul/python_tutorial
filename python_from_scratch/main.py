@@ -153,3 +153,5 @@ def numbercounter():
     print(f"Total numner of element is {counter}")
 
 numbercounter()
+
+print("pushing to Git")
