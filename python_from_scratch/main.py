@@ -124,28 +124,14 @@ def wordcount():
 
 wordcount()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def numbercounter():
     number =123
     my_array = [1, 2, 3, 1, 5, 6 ]
     mystring = "This is anpther good day, my people"
     counter = 0
 
-    for i in range(len(number)):
-        if number[i] != '':
+    for i in range(len(my_array)):
+        if my_array[i] != '':
             counter +=1
         else:
             print("I can't find anything")
@@ -155,3 +141,37 @@ def numbercounter():
 numbercounter()
 
 print("pushing to Git")
+
+
+"""
+#SET Union, interception and difference
+In python, the foloowing symbols are use to 
+Union = | (Pipe)
+Interception = & (Ampersand)
+Difference = _ (Minus)
+
+"""
+
+
+
+lettersA = {"A","B","C","G","H"}
+lettersB = {"D","B","A","G"}
+union = lettersA | lettersB
+intercept = lettersA | lettersB
+difference = lettersA - lettersB
+print(f"The union add distinct value of the variables together. The output is the arranged because the data type of the variables are SET Union is {union}")
+print(f"Interception for the set = {intercept}")
+print(f"Interception for the set = {difference}")
+
+
+#Count the number of character in a sentence
+def character_counter():
+
+    sentence = "This is another good day, keep learning and you will hit your goals shortly."
+    counter=0
+    for i in range(len(sentence)):
+        if sentence[i] != '':
+            counter +=1
+    print(f"The total caharater is {counter}")
+
+character_counter() 
