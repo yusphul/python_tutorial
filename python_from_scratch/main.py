@@ -174,4 +174,74 @@ def character_counter():
             counter +=1
     print(f"The total caharater is {counter}")
 
-character_counter() 
+character_counter()
+
+
+#Dictionary
+#It allows to store key value pair. The keys must be unique
+people = {
+    "name": "Ade",
+    "sex": "Male",
+    "location": "Houston"
+}
+print(people)
+print(people["name"])
+people["name"]
+people["sex"] = "Female"
+print(people)
+#print(f"You said your name is {people.items(name)}")
+"""
+def food():
+    fruit = []
+    veggies = []
+    count=0
+    input1 = input(" Enter your best fruit \n")
+    if count < 5:
+        fruit.append[input1]
+        count += 1
+    else:
+        print("missed data")
+
+    print(fruit)
+
+food()
+
+"""
+sum=0
+numbers = [2,2,2,2,2]
+for i in numbers:
+  #  if numbers[i] != '':
+    sum += i
+
+    print(sum)
+    #sum = numbers+i
+
+
+
+def string_times(arg1,arg2):
+    new_output = arg1 * arg2
+    print(new_output)
+string_times("ssss",3)
+
+
+
+def first_last6(newArray):
+   # newArray=[1,2,3,5,6,8]
+    #for i in newArray:
+   # if newArray[0] == 6 or newArray[len(newArray) - 1] == 6   ----> Same as below
+    if newArray[0] == 6 or newArray[-1] == 6:
+        print (" True --->Number 6 is either at the beginning or end of the arg... Hooray !!!")
+    else:
+        print("False--> There is no 6 the  array args")
+first_last6([2,3,25,4,6])
+
+
+def double_char(character):
+    for i in character:
+        return (i+i)
+    print(i)
+double_char("The")
+ends="*"
+for i in ends:
+    print(i * 100)
+print(f"The end ni opin sinima")
